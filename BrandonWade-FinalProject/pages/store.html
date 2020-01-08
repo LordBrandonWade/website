@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+      </script>
+    <title>Ducks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap" rel="stylesheet">
+  </head>
+<body onload="startTime()">
+<nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="#"><img src="../images/tom's.png" alt="" style="height: 65px; width: 65px;"></a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="store.html">Ducks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="staff.html">Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+</nav>    
+<section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Our Ducks!</h1>
+      <p class="lead text-muted">Shop a wide variety of ducks that will be with you forever!</p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="../images/normal_duck.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">The orignal rubber duck is a staple peice of all mordern homes.
+                Orignating in 19BC, the original rubber duck was originally invited to ward off the evil goose
+                from that years harvest. Now it can be used as a playmate or soulmate in today's modern home<</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                <small class="text-muted">18 watching</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="../images/giant_duck.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">The giant rubber duck is an ancient being that has plagued the world for centuries.
+                Depicted as the giant that killed all gods, it can still be seen floating the worlds water
+                ways, awaiting for its next opponent. We didn't create that duck, but we created a 1:10 scale ratio!(seen as in photo)
+                Equiped with heat seeking missles, housing for 45, a nuclear reactor, and many more!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                <small class="text-muted">1 watching</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="../images/tiny.webp" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">The tiny duck is just a cute, choking hazard. Children love them, and parents love the silence!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                <small class="text-muted">-2 watching</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="../images/images.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is the Technical Support duck. Do you have any technical issues? Simply put this rubber duck on the machine and watch it get repaired instantly.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                <small class="text-muted">20 watching</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="../images/clock.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is the Clock duck. This duck will tell you the time! Every second it will read out the new time to always keep you up to date!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                <small class="text-muted"><div id="txt"></div> watching</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="../images/devil.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Feeling a little lonely and want to put some excitment into your life? This Devil duck will summon a poltergeist as soon as it enters your home! Never feel lonely again! For an added bonus, ship this duck to someone you hate to make their lives a living hell!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                <small class="text-muted">T̶̢̡͖̳̠͉̭̺̗̲͕͙̳̽̋̽̀̌̈́̆͗͋̇͆̂̏̎͜͝h̸̡̢̹̳̗͈̟̹͆ẹ̶̢̧̧͇͇̘͙̬͕̳͎̻̠̺͙̲͓̠̀̈́͗̉̅́̓̄̏́̈́͗̍̅̈́̈̕͝ͅý̵̱͓̤̺̯̤͖͈͔̩̞̥͔̥̳̌̈́̀̕͝ ̴̞͈͉̤͒̓̈̔̆͋̓̓̈͋̒̚̚͝ä̷̮̩̩̮̫͎͉̭̫̫̟̗́̽̋̽̊́̔̂̿̔̿̈́̍̍̓̈͑̃͜͜͠r̷̢̧͙̠̫̤̜͆̓̑͛̊̈͐̾̏̚e̸̳̙͈͌͋͊̈̂̀̓̊̅͘͠ ̵̢̰͍̹̪̫̜̯̪̬̤̦̺̺͈̩̭͍̣̉̉̽̀͌̊̈́̐̐̆̋̈́̎̇̋̐͐̚͘͘͠ͅw̸̰̥̣̱̙̗̞͚̘̰̩̬̍̇̄̃̍̽̔̈̓͂͌̉͝͠͝a̴͎̱̪̗̫͕̿̀̈́̋̒̋̍̈͒͗͒̈̓̕͜͝ţ̸̰̠̻̭̯̦̯͉̫̞̬̦̆̓̾͆͗̄̀͆̓̏̂̂̎̌͘͜͝ͅc̷̡̡̡̠̠̫̝̜̯̞̠͚̗̙̖̲̫̓̈̇͘̕ḩ̴̘̭͔̜͚̙̱̘̹̞̙̹̘͊̓̉͂̈́̋̾̇͊̓̈͒̀̂̊̾͐̄͐͘͜͝i̶̛̫̠͉͈͕͕̻̩͎̗͍̯͎͔͔͙̝̬͚̦̜ń̶̨͙̬͕̼̠̳̗̣̽͛̍̾̃̚͝g̷̡̢̡̝̘̣̝̤̲̣̩̩̺͍͎̪͉͇͈̓́</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="../images/grandman.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This friendly looking Grandma duck will make you nice hot coco, soup when you are sick, and a sweater for christmas! If you wait long enough, you may also wake up to a nice, hand-knitted, blanket keeping you warm.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                <small class="text-muted">100+ watching</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="../images/military.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is the Commando duck. Do you feel unsafe in your neighborhood? Or pehaps the local militia is after you? Worry no more with this duck! Simply put it in front of your house and watch all the bodies fly as it protects you both night and day!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                <small class="text-muted">Texas watching</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="../images/monster.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">⍀⎍⋏ ⎎⍜⍀ ⊬⍜⎍⍀ ⌰⟟⎎⟒ ⏚⟒⎎⍜⍀⟒ ⟟⏁ ⟟⌇ ⏁⍜⍜ ⌰⏃⏁⟒! ⏁⊑⟟⌇ ⎅⎍☊☍ ⍙⟟⌰⌰ ⟒⋏⎅ ⏃⌰⌰ ⍜⎎ ⊑⎍⋔⏃⋏⟟⏁⊬ ⍙⟟⏁⊑⍜⎍⏁ ⏃ ⌇⟒☊⍜⋏⎅ ⏁⊑⍜⎍☌⊑! ⍜⋏ ⌇⏃⌰⟒ ⋏⍜⍙!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">⎐⟟⟒⍙</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">⏚⎍⊬</button>
+                </div>
+                <small class="text-muted">⋔⏃⍀⌇ ⍙⏃⏁☊⊑⟟⋏☌</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="../images/killer.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Who is he? No one knows. He appears where he is paid and kills without second thought. How much is he? Couldn't tell ya. Depends on his mood. Just hope you never see him yourself or it already too late.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+          
+                      </div>
+                      <small class="text-muted">[REDACTED] watching</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="../images/ceaser.jpeg" alt="Card image cap">
+                <div class="card-body">
+                <p class="card-text">Not for sale. This duck was killed by the duck to the left.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">23 watching 30 times</small>
+                </div>
+                </div>
+            </div>
+            </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="../images/stalker.jpg" alt="Card image cap">
+                <div class="card-body">
+                <p class="card-text">Need info? Need it soon? Pay this duck to stalk anyone and have him report back every night with new information. One time use. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                    </div>
+                    <small class="text-muted">Hes watching</small>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+        <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <p>1640 Riverside Drive, Hill Valley, California
+        <br/>info@mywebsite.com
+        <br/>+ 01 234 567 88
+        <br/>+ 01 234 567 89</p>
+        </div>
+    </div>
+    <div class="footer-copyright text-center">© 2019 Copyright: MyWebsite.com</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
